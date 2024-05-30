@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1609FFA-25AF-4328-8F64-EAEB0030C5A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UbiTec</RootNamespace>
+    <AssemblyName>UbiTec</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.4\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.5.1.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.5.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionQ_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionQ_1.Designer.cs">
+      <DependentUpon>OpcionQ_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionO_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionO_1.Designer.cs">
+      <DependentUpon>OpcionO_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionD_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionD_1.Designer.cs">
+      <DependentUpon>OpcionD_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionC_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionC_1.Designer.cs">
+      <DependentUpon>OpcionC_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionA_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionA_1.Designer.cs">
+      <DependentUpon>OpcionA_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionB_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionB_1.Designer.cs">
+      <DependentUpon>OpcionB_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionE_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionE_1.Designer.cs">
+      <DependentUpon>OpcionE_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionF_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionF_1.Designer.cs">
+      <DependentUpon>OpcionF_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionG1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionG1.Designer.cs">
+      <DependentUpon>OpcionG1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionH1.Designer.cs">
+      <DependentUpon>OpcionH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionI_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionI_1.Designer.cs">
+      <DependentUpon>OpcionI_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionJ_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionJ_1.Designer.cs">
+      <DependentUpon>OpcionJ_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionK_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionK_1.Designer.cs">
+      <DependentUpon>OpcionK_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionL_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionL_1.Designer.cs">
+      <DependentUpon>OpcionL_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionM_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionM_1.Designer.cs">
+      <DependentUpon>OpcionM_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionN_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionN_1.Designer.cs">
+      <DependentUpon>OpcionN_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionP_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionP_1.Designer.cs">
+      <DependentUpon>OpcionP_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionR_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionR_1.Designer.cs">
+      <DependentUpon>OpcionR_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionS_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionS_1.Designer.cs">
+      <DependentUpon>OpcionS_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro.Designer.cs">
+      <DependentUpon>registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sacar_Turno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sacar_Turno.Designer.cs">
+      <DependentUpon>Sacar_Turno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Usuarios.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionQ_1.resx">
+      <DependentUpon>OpcionQ_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionO_1.resx">
+      <DependentUpon>OpcionO_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionC_1.resx">
+      <DependentUpon>OpcionC_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionA_1.resx">
+      <DependentUpon>OpcionA_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionB_1.resx">
+      <DependentUpon>OpcionB_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionD_1.resx">
+      <DependentUpon>OpcionD_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionE_1.resx">
+      <DependentUpon>OpcionE_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionF_1.resx">
+      <DependentUpon>OpcionF_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionG1.resx">
+      <DependentUpon>OpcionG1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionH1.resx">
+      <DependentUpon>OpcionH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionI_1.resx">
+      <DependentUpon>OpcionI_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionJ_1.resx">
+      <DependentUpon>OpcionJ_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionK_1.resx">
+      <DependentUpon>OpcionK_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionL_1.resx">
+      <DependentUpon>OpcionL_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionM_1.resx">
+      <DependentUpon>OpcionM_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionN_1.resx">
+      <DependentUpon>OpcionN_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionP_1.resx">
+      <DependentUpon>OpcionP_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionR_1.resx">
+      <DependentUpon>OpcionR_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionS_1.resx">
+      <DependentUpon>OpcionS_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registro.resx">
+      <DependentUpon>registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sacar_Turno.resx">
+      <DependentUpon>Sacar_Turno.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pantalla principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consola %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consola %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones A-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones B-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones C-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones C-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones D-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones E-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones F-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones G-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones H-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones I-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones J-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones K-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones K-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones A-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones B-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones D-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones E-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones F-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones G-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones H-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones I-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones J-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones K-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones L-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones M-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones N-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones O-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones P-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones Q-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones R-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones S-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones S-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones B-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones B-1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones D-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones E-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones F-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones G-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones H-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones H-1 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones I-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones J-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones K-1 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones L-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones M-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones M-1 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones N-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones O-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones P-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones Q-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones R-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones S-1 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones H-1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones M-1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca-de-la-cruz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simbolo-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dupdo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1707498448438 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tec Tlaxiaco[3337].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculos\BibliotecaCola.csproj">
+      <Project>{21e9f319-8384-4876-bdb1-9d310881c03a}</Project>
+      <Name>BibliotecaCola</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 21 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 20 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_more_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron_right_FILL0_wght400_GRAD0_opsz24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage_search_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient_list_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack_star_24dp_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack_star_20dp_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack_star_20dp_FILL0_wght400_GRAD0_opsz201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_profile_account_contact_icon_229464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_profile_user_avatar_icon_219236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_avatar_face_man_people_profile_user_icon_123197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16381516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14516963.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16136307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15520850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_circle_24dp_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straight-horizontal-line_icon-icons.com_74237.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
